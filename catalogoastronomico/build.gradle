@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = "catalogoastronomico.Astro"
+run {
+    standardInput = System.in
+}
+dependencies {
+// Dependencia para realizar tests unitarios
+    testImplementation 'junit:junit:4.13.2' }
+
+
